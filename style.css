@@ -14,8 +14,7 @@ html {
 }
 
 .container-grid {
-    background-color: #413982;
-    height: 300px;
+    height: 80vw;
     width: 100%;
     margin: 0 auto;
 }
@@ -23,7 +22,8 @@ html {
 .banner {
     height: 100vh;
     background-image: url(banner.png);
-    background-position: 165% 40%;
+    background-color: #413982;
+    background-position: 50% 50%;
 }
 
 header {
@@ -35,24 +35,101 @@ header button {
 }
 
 header img {
-    width: 400px;
+    width: 250px;
 }
 
 header .container-grid {
     height: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+
 }
 
 .menu {
-    width: 700px;
+    width: 850px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu a {
     font-size: 18px;
     font-family: "Chakra Petch";
     color: white;
+    text-decoration: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.conteudo-banner {
+    display: flex;
+    align-items: end;
+    display: flex;
+    justify-content: left;
+    padding: 230px;
+    padding-top: 100px;
+}
+
+.conteudo-banner p {
+    color: white;
+    font-family: "Chakra Petch";
+    font-size: 48px;
+}
+
+.conteudo-banner span {
+    display: block;
+    overflow: hidden;
+    border-right: 5px solid white;
+    white-space: nowrap;
+    animation: 
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite
+    ;
+}
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50%{
+        border-color: white;
+    }
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre h2 {
+    font-family: "Chakra Petch";
+    font-size: 48px;
+}
+
+#sobre p {
+    font-family: "Quicksand";
+    font-size: 24px;
+}
+
+#sobre img {
+    margin-left: 20px;
 }
