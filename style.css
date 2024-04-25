@@ -109,27 +109,86 @@ header .container-grid {
     }
 }
 
+.grid {
+    height: 100%;
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
 #sobre {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.texto {
+.text-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-column {
     display: flex;
     flex-direction: column;
 }
 
 #sobre h2 {
     font-family: "Chakra Petch";
-    font-size: 48px;
+    font-size: 64px;
+    color: #413982;
 }
 
 #sobre p {
     font-family: "Quicksand";
-    font-size: 24px;
+    font-size: 33px;
+    width: 500px;
+    text-align: justify;
+    color: #413982;
 }
 
 #sobre img {
-    margin-left: 20px;
+    margin-left: 50px;      
+}
+
+.a {
+    border-radius: 25px;
+    height: 600px;
+    width: 670px;
+}
+
+#valores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grade {
+    height: 100%;
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.linha {
+    height: 5px;
+    width: 100%;
+    background-color: #413982;
+}
+
+#valores h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Chakra Petch";
+    font-size: 64px;
+    color: #413982;
+    text-align: center;
+}
+
+#valores p {
+    font-family: "Quicksand";
+    font-size: 36px;
+    text-align: center;
+    color: #413982;
 }
