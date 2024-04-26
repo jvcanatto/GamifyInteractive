@@ -19,11 +19,20 @@ html {
     margin: 0 auto;
 }
 
+.container-grid img {
+    width: 250px;
+    height: 100px;
+}
+
 .banner {
     height: 100vh;
-    background-image: url(banner.png);
+    background-image: url(img/banner.png);
     background-color: #413982;
     background-position: 50% 50%;
+}
+
+header img {
+    width: 100px;
 }
 
 header {
@@ -32,10 +41,6 @@ header {
 
 header button {
     display: none;
-}
-
-header img {
-    width: 250px;
 }
 
 header .container-grid {
@@ -51,6 +56,7 @@ header .container-grid {
     display: flex;
     justify-content: space-around;
 }
+
 
 .menu a {
     font-size: 18px;
@@ -90,14 +96,7 @@ header .container-grid {
     ;
 }
 
-@keyframes digitando {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
+
 
 @keyframes cursor {
     from,
@@ -137,18 +136,21 @@ header .container-grid {
     font-family: "Chakra Petch";
     font-size: 64px;
     color: #413982;
+    padding-bottom: 20px;
 }
 
 #sobre p {
     font-family: "Quicksand";
-    font-size: 33px;
+    font-size: 28px;
     width: 500px;
     text-align: justify;
     color: #413982;
 }
 
 #sobre img {
-    margin-left: 50px;      
+    margin-left: 50px;  
+    width: 700px;
+    height: 450px;    
 }
 
 .a {
@@ -191,4 +193,163 @@ header .container-grid {
     font-size: 36px;
     text-align: center;
     color: #413982;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-card h2 {
+    font-family: "Chakra Petch";
+    font-size: 64px;
+    color: #413982;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+}
+
+.container-card p {
+    font-family: "Quicksand";
+    font-size: 20px;
+    color: #413982;
+    text-align: justify;
+    width: 350px;
+    padding-top: 40px;
+}
+
+.container-card img {
+    height: 250px;
+    width: 350px;
+    transition: 500ms;
+}
+
+.card img:hover {
+    height: 300px;
+    width: 400px;
+}
+
+.card:first-child {
+    padding-left: 140px;
+}
+
+.card:last-child {
+    padding-right: 140px;
+}
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+    font-family: "Chakra Petch";
+    font-size: 64px;
+    color: #413982;
+}
+
+#contato form {
+    background-color: #413982;
+    font-family: "Chakra Petch";
+    font-size: 17px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px 0;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.campo {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+ 
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+    color: #413982;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: #413982;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+}
+
+button {
+    color: white;
+    background-color: #362f6f;
+}
+
+.campo label, .campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea {
+    font-family: "Chakra Petch";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #b9b9b9;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid #2d275e;
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    font-family: "Chakra Petch";
+    font-weight: 700; /* Bold */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#contato form button:hover {
+    background-color: #2d275e;
 }
