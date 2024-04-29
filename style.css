@@ -202,7 +202,7 @@ header .container-grid {
 }
 
 .card {
-    height: 800px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -226,6 +226,8 @@ header .container-grid {
     text-align: justify;
     width: 350px;
     padding-top: 40px;
+    opacity: 0;
+    transition: 400ms;
 }
 
 .container-card img {
@@ -237,6 +239,11 @@ header .container-grid {
 .card img:hover {
     height: 300px;
     width: 400px;
+}
+
+.card img:hover + p {
+    opacity: 1;
+    transition: 400ms;
 }
 
 .card:first-child {
@@ -254,7 +261,7 @@ header .container-grid {
 }
 
 #contato h2 {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     font-family: "Chakra Petch";
     font-size: 64px;
     color: #413982;
@@ -333,7 +340,7 @@ button {
 
 .campo input:focus,
 .campo-descricao textarea:focus {
-    outline: 2px solid #2d275e;
+    outline: 3px solid #8d67df;
 }
 
 #contato form button {
@@ -352,4 +359,44 @@ button {
 
 #contato form button:hover {
     background-color: #2d275e;
+}
+
+footer {
+    height: 420px;
+    background-color: #413982;
+}
+
+footer .grid-footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: white;
+    font-family: "Chakra Petch";
+    font-size: 28px;
+}
+
+
+
+.icone-um {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.icone-dois {
+    display: flex;
+    justify-content: end;
+    width: 00px;
 }
