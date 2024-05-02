@@ -430,10 +430,6 @@ footer .grid-footer {
         background-position: 100% 35%;
     }
 
-    .banner img {
-        
-    }
-
     #sobre p {
         font-size: 25px;
     }
@@ -446,31 +442,29 @@ footer .grid-footer {
     footer {
         width: 1350px;
     }
+
+    .linha {
+        width: 1100;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-    #sobre img {
-        width: 500px;
-     }
+    .linha {
+        width: 1100px;
+    }
 
-     .linha {
-        width: 1050px;
-     }
+    #valores h2, p {
+        padding-left: 180px;
+    }
 
-     #valores p {
-        padding-left: 110px;
-     }
+    .card img {
+        width: 320px;
+        height: 370px;
+        gap: 20px;
+    }
 
-     .card {
-        max-width: 1200px;
-     }
+    .card p {
+        width: 400px;
+    }
 
-     .card p {
-        width: 100%;
-        padding-right: 130px;
-     }
-
-     #contato {
-        width: 100%;
-     }
 }
