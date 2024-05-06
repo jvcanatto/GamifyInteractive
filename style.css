@@ -57,6 +57,10 @@ header .container-grid {
     justify-content: space-around;
 }
 
+.menu svg {
+    display: none;
+}
+
 
 .menu a {
     font-size: 18px;
@@ -246,14 +250,6 @@ header .container-grid {
     transition: 400ms;
 }
 
-.card:first-child {
-    padding-left: 140px;
-}
-
-.card:last-child {
-    padding-right: 140px;
-}
-
 #contato {
     text-align: center;
     padding-bottom: 100px;
@@ -385,6 +381,13 @@ footer .grid-footer {
     align-items: flex-end;
 }
 
+.redes-sociais h2 {
+    color: white;
+    font-family: "Chakra Petch";
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
 .redes-sociais p {
     color: white;
     font-family: "Chakra Petch";
@@ -449,34 +452,255 @@ footer .grid-footer {
 }
 
 @media screen and (max-width: 1200px) {
-    
+    .banner {
+        width: 100%;
+    }
+
+    header .container-grid {
+        justify-content: center;
+    }
+
+    .container-grid img {
+        width: 200px;
+        height: 80px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        justify-content: center;
+        padding-right: 10px;
+    }
+
+    #sobre img {
+        height: 300px;
+        width: 430px;
+    }
+
+    #sobre p {
+        font-size: 20px;
+    }
+
+    .linha {
+        width: 100%;
+    }
+
+    .container-cards {
+        /* justify-content: center; */
+    }
+
+    footer {
+        width: 100%;
+    }
 }
-       
 
+@media screen and (max-width: 1090px) {
+    #sobre h2 {
+        width: 410px;
+        font-size: 44px;
+    }
 
+    #sobre p {
+        width: 350px;
+    }
 
+    .card {
+        width: unset;
+    }
 
+    .card img {
+        width: 280px;
+        height: 200px;
+    }
 
+    .card img:hover {
+        width: 330px;
+        height: 250px;
+    }
 
+    .card p {
+        width: 290px;
+    }
+}
 
+@media screen and (max-width: 990px) {
+    #sobre img {
+        margin-left: unset;
+    }
+}
 
+@media screen and (max-width: 935px) {
+    #sobre img {
+        width: 310;
+        height: 250px;
+    }
 
+    #sobre h2 {
+        font-size: 30px;
+    }
 
+    #sobre p {
+        font-size: 18px;
+    }
 
+    .card img {
+        width: 250px;
+        height: 190px;
+    }
 
+    .card img:hover {
+        width: 300px;
+        height: 240px;
+    }
 
+    .card p {
+        font-size: 18px;
+    }
 
+    .redes-sociais p{
+        font-size: 26px;
+    }
+}
 
+@media screen and (max-width: 890px) {
+    .redes-sociais p {
+        font-size: 24px;
+    }
 
+    .redes-sociais h2 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
 
+    .icones-redes a {
+        width: 265px;
+    }
+}
 
+@media screen and (max-width: 850px) {
+    #sobre img {
+        width: 300px;
+        height: 260px;
+    }
 
+    .card img {
+        width: 220px;
+        height: 160px;
+    }
 
+    .card img:hover {
+        width: 270px;
+        height: 210px;
+    }
 
+    .card p {
+        font-size: 16px;
+        width: 250px;
+    }
+}
 
-    
+@media screen and (max-width: 790px) {
+    .conteudo-banner {
+        padding-left: 100px;
+    }
 
-    .grid-footer svg {
-        margin-left: 10px;
+    #sobre h2 {
+        width: 180px;
+        font-size: 22px;
+    }
+
+    #sobre p {
+        width: 330px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .container-card h2 {
+        padding-left: 100px;
+    }
+
+    .card img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .card img:hover {
+        width: 350px;
+        height: 300px;
+    }
+
+    #cases.container-grid {
+        margin: unset;
+        height: 100%;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+        gap: 40px;
+        overflow-x: auto;
+    }
+
+    .card {
+        height: unset;
+        width: 280px;
+        flex-basis: unset;
+    }
+
+    .card:first-child {
+        margin-left: 50px;
+    }
+
+    .card:last-child {
+        margin-right: 50px;
+    }
+
+    .icones-redes h2 {
+        font-size: 20px;
+    }
+
+    .icones-redes p {
+        font-size: 18px;
+    }
+
+    .icones-redes a {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sobre p {
+        font-size: 15px;
+        width: 280px;
+    }
+
+    .menu {
+        width: 300px;
+        justify-content: end;
+    }
+
+    .menu svg {
+        display: flex;
+        fill: white;
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    #sobre p {
+        font-size: 14px;
+        width: 250px;
+    }
+
+    footer img {
+        width: 240px;
+        height: 100px;
+    }
+
+    .redes-sociais h2 {
+        font-size: 18px;
     }
 }
