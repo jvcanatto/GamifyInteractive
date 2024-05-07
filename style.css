@@ -48,16 +48,16 @@ header .container-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .menu {
     width: 850px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 
-.menu svg {
+.menu1 {
     display: none;
 }
 
@@ -674,21 +674,11 @@ footer .grid-footer {
     }
 
     .menu {
+        display: none;
         width: 300px;
         justify-content: end;
     }
 
-    .menu svg {
-        display: flex;
-        fill: white;
-        position: relative;
-        width: 50px;
-        height: 50px;
-    }
-
-    .menu a {
-        display: none;
-    }
 
     #sobre p {
         font-size: 14px;
@@ -704,3 +694,98 @@ footer .grid-footer {
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .conteudo-banner {
+        padding-left: 50px;
+        font-size: 25px;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    #sobre p {
+        width: 100%;
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    #sobre h2 {
+        justify-content: center;
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .icones-redes p {
+        font-size: 16px;
+    }
+
+    .icones-redes a {
+        width: 180px;
+    }
+
+    .icones-redes svg {
+        width: 20px;
+    }
+
+    .redes-sociais h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .conteudo-banner p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    footer img {
+        width: 180px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .icones-redes p {
+        font-size: 14px;
+    }
+
+    .icones-redes a {
+        width: 150px;
+    }
+    
+    footer img {
+        width: 150px;
+        height: 60px;
+    }
+
+    .container-card h2 {
+        width: 80%;
+        font-size: 24px;
+    }
+
+    #valores h2 {
+        font-size: 24px;
+    }
+
+    #valores p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+    .icones-redes p {
+        font-size: 13px;
+    }
+
+    .icones-redes a {
+        width: 140px;
+    }
+}
+
