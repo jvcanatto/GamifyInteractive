@@ -780,6 +780,10 @@ footer .grid-footer {
         font-size: 24px;
     }
 
+    #contato form {
+        width: 90%;
+    }
+
     .icones-redes p {
         font-size: 13px;
     }
